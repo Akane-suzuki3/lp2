@@ -1,0 +1,7 @@
+<svg id="Back_to_top" data-name="Back to top" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="パス_1" data-name="パス 1" fill="#fff">
+    <path d="M 39 39 L 1 39 L 1 1 L 39 1 L 39 39 Z" stroke="none"/>
+    <path d="M 2 2 L 2 38 L 38 38 L 38 2 L 2 2 M 0 0 L 40 0 L 40 40 L 0 40 L 0 0 Z" stroke="none" fill="#0071ce"/>
+  </g>
+  <path id="arrow-up-short" d="M11.5,20a1,1,0,0,0,1-1V7.414l4.291,4.293a1,1,0,1,0,1.416-1.416l-6-6a1,1,0,0,0-1.416,0l-6,6a1,1,0,1,0,1.416,1.416L10.5,7.414V19A1,1,0,0,0,11.5,20Z" transform="translate(8.501 8.001)" fill="#0071ce" fill-rule="evenodd"/>
+</svg>

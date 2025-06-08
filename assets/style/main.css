@@ -1,0 +1,348 @@
+/* ベースのスタイル
+------------------------------------------ */
+html {
+    font-size: calc(10 * 100vw / 375); /* 390はSPデザインカンプの幅 */   
+    /* 変換サイト・ツールなどで、 390pxの幅での10pxを変換して2.56vwなのでそれを当ててもよい */
+    /* font-size: 2.564102vw; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+@media (min-width:768px) {
+    html {
+         font-size: calc(10 * 100vw / 1200); /* 1200はPCカンプのコンテンツ幅 */
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+	font-family: 'Noto Sans Japanese', sans-serif;
+    line-height: 1.75;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 部品
+------------------------------------------ */
+/* flexbox */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Outfitフォント */
+.outfit {
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+/* 文字の太さmedium */
+.medium {
+    font-weight: 500;
+}
+
+/* 各セクションの左右の余白 */
+.header .course,
+.point {
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+}
+
+
+/* ボタン */
+
+/* 青 */
+.button-blue-ghost {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 25rem;
+    height: 4.8rem;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 767.9px) {
+.button-blue-ghost {
+        width: 34rem;
+        height: 7.5rem;
+            font-size: 2.4rem;
+}
+}
+
+.button-blue-ghost:hover {
+        opacity: 0.6;
+}
+
+.button-blue {
+    background-color: #46C4DB;
+}
+
+/* 緑 */
+.button-green-ghost {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 25rem;
+    height: 4.8rem;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 767.9px) {
+.button-green-ghost {
+        width: 34rem;
+        height: 7.5rem;
+            font-size: 2.4rem;
+}
+}
+
+.button-green-ghost:hover {
+        opacity: 0.6;
+}
+
+.button-green {
+    background-color: #5DD5AB;
+}
+
+
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 7rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 116rem;
+        margin: 0 auto;
+        padding: 0 1.6rem;
+    }
+    .header {
+    height: 10.1rem;
+    }
+}
+
+
+/* カバー
+------------------------------------------ */
+
+.cover.container{
+    max-width: 116rem;
+    margin:auto;
+}
+
+
+.cover.background_image{
+    background-image: url(/assets/images/cover/mainvisual_sp.jpg);
+    background-size: cover;
+    height: 25rem;
+            margin-top: 7rem;
+    background-position:center;
+}
+
+@media (min-width: 768px) {
+    .cover.background_image {
+        display: flex;
+        margin-top: 11.1rem;
+        margin-left: 1rem;
+        width: 100%;
+        height: 65rem;
+        background-image: url(../images/cover/mainvisual_pc.jpg);
+        background-size: cover;
+            background-position:center;
+    }
+}
+
+/* キャッチコピー */
+.cover-catch {
+    margin-top:2.07rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media (min-width: 768px) {
+.cover-catch-top {
+    margin-top:0.8rem;
+}
+}
+
+.cover-catch-top{
+    color: #333333;
+    font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+.cover-catch-top {
+    font-size: 3.3rem;
+}
+}
+
+.cover-catch-bottom {
+    color: #005BAC;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.44;
+}
+@media (min-width: 768px) {
+.cover-catch-bottom {
+    font-size: 6rem;
+}
+}
+
+
+
+/* コンタクト
+------------------------------------------ */
+.contact {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-top: 3.6rem;
+}
+
+
+@media (min-width: 768px) {
+    .contact {
+        margin-top: 7.5rem;
+    }
+}
+
+.contact .container {
+        display: flex;
+            justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    height: 21.3rem;
+    background-color: #FFEDED;
+}
+
+@media (min-width: 768px) {
+    .contact .container {
+        height: 23.1rem;
+    }
+}
+
+.contact-text{
+    display: flex;
+    width: 30.3rem;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contact-text{
+    width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .free-button{
+    padding-top: 1rem;
+    }
+}
+
+/* 紹介紹介
+------------------------------------------ */
+
+.introduction.background_image{
+    background-image: url(/assets/images/introduction/introduction_sp.jpg);
+    background-size: cover;
+    height: 25rem;
+            margin-top: 7rem;
+    background-position:center;
+}
+
+@media (min-width: 768px) {
+    .introduction.background_image {
+        display: flex;
+        margin-top: 10.1rem;
+        width: 100%;
+        height: 65rem;
+        background-image: url(/assets/images/introduction/introduction_pc.jpg);
+        background-size: cover;
+            background-position:center;
+    }
+}
+
+
+
+
+
+
+
+/* フッター
+------------------------------------------ */
+.footer{
+background-color: #DDDDDD;
+    height: 100%;
+}
+
+.footer .container{
+    line-height: 8.3rem;
+    display: flex;
+    justify-content: center;
+}
+/* コピーライト */
+.footer-copyright {
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+.footer-copyright{
+        padding-top: 1.3rem;
+        font-size: 1.3rem;
+}
+}
+
+
+.top-arrow-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 27px;
+    position: sticky;
+    bottom: 10px;
+    left: 0;
+}
