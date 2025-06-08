@@ -20,10 +20,14 @@ html {
     }
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	font-family: 'Noto Sans Japanese', sans-serif;
-    line-height: 1.75;
-    color: #333333;
+    color: #000000;
 }
 
 a {
@@ -60,16 +64,7 @@ ul {
     font-weight: 500;
 }
 
-/* 各セクションの左右の余白 */
-.header .course,
-.point {
-    padding-right: 1.6rem;
-    padding-left: 1.6rem;
-}
-
-
 /* ボタン */
-
 /* 青 */
 .button-blue-ghost {
     display: flex;
@@ -116,8 +111,8 @@ ul {
 .button-green-ghost {
         width: 34rem;
         height: 7.5rem;
-            font-size: 2.4rem;
-}
+        font-size: 2.4rem;
+    }
 }
 
 .button-green-ghost:hover {
@@ -128,8 +123,6 @@ ul {
     background-color: #5DD5AB;
 }
 
-
-
 /* ヘッダー
 ------------------------------------------ */
 .header {
@@ -138,8 +131,7 @@ ul {
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 7rem;
-    background-color: #fff;
+    background-color: transparent; 
     width: 100%;
 }
 
@@ -147,45 +139,31 @@ ul {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-@media (min-width: 768px) {
-    .header-container {
-        max-width: 116rem;
-        margin: 0 auto;
-        padding: 0 1.6rem;
-    }
-    .header {
-    height: 10.1rem;
-    }
+    justify-content: center;
+    font-family: "Marcellus", serif;
+    font-size: 2.4rem;
 }
 
 
 /* カバー
 ------------------------------------------ */
-
 .cover.container{
     max-width: 116rem;
     margin:auto;
 }
 
-
 .cover.background_image{
     background-image: url(/assets/images/cover/mainvisual_sp.jpg);
     background-size: cover;
-    height: 25rem;
-            margin-top: 7rem;
+    height: 45rem;
     background-position:center;
+    padding-top: 1rem;
+    position: relative;
 }
 
 @media (min-width: 768px) {
     .cover.background_image {
         display: flex;
-        margin-top: 11.1rem;
-        margin-left: 1rem;
         width: 100%;
         height: 65rem;
         background-image: url(../images/cover/mainvisual_pc.jpg);
@@ -201,65 +179,42 @@ ul {
     flex-direction: column;
     align-items: flex-start;
 }
-@media (min-width: 768px) {
-.cover-catch-top {
-    margin-top:0.8rem;
-}
-}
 
 .cover-catch-top{
-    color: #333333;
-    font-size: 1.4rem;
+    font-family: "Marcellus", serif;
+    font-size:4.1rem;
 }
+
 @media (min-width: 768px) {
 .cover-catch-top {
-    font-size: 3.3rem;
+    font-size: 5rem;
 }
 }
 
 .cover-catch-bottom {
-    color: #005BAC;
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 1.44;
+    font-size: 2rem;
 }
+
 @media (min-width: 768px) {
 .cover-catch-bottom {
-    font-size: 6rem;
+    font-size: 2.5rem;
 }
 }
-
-
 
 /* コンタクト
 ------------------------------------------ */
 .contact {
-    padding-right: 0rem;
-    padding-left: 0rem;
-    margin-top: 3.6rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
 }
 
-
-@media (min-width: 768px) {
-    .contact {
-        margin-top: 7.5rem;
-    }
-}
-
-.contact .container {
-        display: flex;
-            justify-content: center;
+.contact-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 4rem;
-    height: 21.3rem;
-    background-color: #FFEDED;
-}
-
-@media (min-width: 768px) {
-    .contact .container {
-        height: 23.1rem;
-    }
+    background-color: #F0F4FF;
 }
 
 .contact-text{
@@ -267,30 +222,21 @@ ul {
     width: 30.3rem;
     flex-direction: column;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    color: #111111;
     justify-content: center;
 }
 
-@media (min-width: 768px) {
-    .contact-text{
-    width: 100%;
-    }
-}
 
-@media (min-width: 768px) {
-    .free-button{
-    padding-top: 1rem;
-    }
-}
 
-/* 紹介紹介
+
+/* 紹介
 ------------------------------------------ */
-
 .introduction.background_image{
     background-image: url(/assets/images/introduction/introduction_sp.jpg);
     background-size: cover;
-    height: 25rem;
-            margin-top: 7rem;
+    height: 68rem;
+    margin-top: 7rem;
     background-position:center;
 }
 
@@ -306,11 +252,30 @@ ul {
     }
 }
 
+.introduction-catch{
+    width: 35.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.introduction-catch-title{
+    font-family: "EB Garamond", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
 
+.introduction-catch-top{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+}
 
-
-
+.introduction-catch-bottom{
+    font-size: 1.4rem;
+    color: #fff;
+}
 
 /* フッター
 ------------------------------------------ */
