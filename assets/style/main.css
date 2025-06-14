@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-	font-family: 'Noto Sans Japanese', sans-serif;
+	font-family: "Noto Serif JP", serif;
     color: #000000;
 }
 
@@ -45,6 +45,10 @@ ul {
 }
 
 
+h2{
+   text-align: center; 
+}
+
 /* 部品
 ------------------------------------------ */
 /* flexbox */
@@ -54,15 +58,6 @@ ul {
     justify-content: center;
 }
 
-/* Outfitフォント */
-.outfit {
-	font-family: 'Noto Sans Japanese', sans-serif;
-}
-
-/* 文字の太さmedium */
-.medium {
-    font-weight: 500;
-}
 
 /* ボタン */
 /* 青 */
@@ -71,11 +66,11 @@ ul {
     color: #fff;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 5rem;
-    width: 25rem;
-    height: 4.8rem;
-    font-size: 1.6rem;
+    width: 29rem;
+    height: 5.8rem;
+    font-size: 1.8rem;
 }
 
 @media (min-width: 767.9px) {
@@ -96,15 +91,16 @@ ul {
 
 /* 緑 */
 .button-green-ghost {
+    margin-top: 1.7rem;
     display: flex;
     color: #fff;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 5rem;
-    width: 25rem;
-    height: 4.8rem;
-    font-size: 1.6rem;
+    width: 29rem;
+    height: 5.8rem;
+    font-size: 1.8rem;
 }
 
 @media (min-width: 767.9px) {
@@ -136,26 +132,29 @@ ul {
 }
 
 .header-container {
+    padding-top: 2.3rem;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Marcellus", serif;
     font-size: 2.4rem;
+    letter-spacing: 0.17em;
 }
 
 
 /* カバー
 ------------------------------------------ */
-.cover.container{
-    max-width: 116rem;
-    margin:auto;
+.cover{
+    height: 55.7rem;
 }
+
+
 
 .cover.background_image{
     background-image: url(/assets/images/cover/mainvisual_sp.jpg);
     background-size: cover;
-    height: 45rem;
+    height: 43.3rem;
     background-position:center;
     padding-top: 1rem;
     position: relative;
@@ -172,17 +171,20 @@ ul {
     }
 }
 
-/* キャッチコピー */
+.cover-container{
+    margin-top: 39rem;
+    margin-left: 2.3rem;
+}
+
 .cover-catch {
     margin-top:2.07rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .cover-catch-top{
     font-family: "Marcellus", serif;
     font-size:4.1rem;
+    font-weight: 400 ;
+    letter-spacing: 0.265em;
 }
 
 @media (min-width: 768px) {
@@ -192,7 +194,10 @@ ul {
 }
 
 .cover-catch-bottom {
+    padding-top: 0.5rem;
     font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.245em;
 }
 
 @media (min-width: 768px) {
@@ -206,6 +211,8 @@ ul {
 .contact {
     padding-right: 1.6rem;
     padding-left: 1.6rem;
+    padding-top: 2.8rem;
+    padding-bottom: 1rem;
 }
 
 .contact-container {
@@ -213,101 +220,418 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 4rem;
     background-color: #F0F4FF;
+    padding-top: 1.8rem;
+    
 }
 
 .contact-text{
     display: flex;
-    width: 30.3rem;
     flex-direction: column;
     text-align: center;
     font-size: 1.8rem;
     color: #111111;
     justify-content: center;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+.contact_fee{
+padding-top: 0.4rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.08em;
+    font-weight: 400;
 }
 
-
-
+.free-button{
+    margin-top: 1.7rem;
+    margin-bottom: 3rem;
+}
 
 /* 紹介
 ------------------------------------------ */
-.introduction.background_image{
+.introduction{
     background-image: url(/assets/images/introduction/introduction_sp.jpg);
     background-size: cover;
-    height: 68rem;
-    margin-top: 7rem;
+    height: 65.5rem;
+    margin-top: 5rem;
     background-position:center;
 }
 
 @media (min-width: 768px) {
-    .introduction.background_image {
+    .introduction{
         display: flex;
         margin-top: 10.1rem;
         width: 100%;
         height: 65rem;
         background-image: url(/assets/images/introduction/introduction_pc.jpg);
         background-size: cover;
-            background-position:center;
+        background-position:center;
     }
+}
+
+.introduction-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;  
+    padding-top: 4.5rem;
 }
 
 .introduction-catch{
     width: 35.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .introduction-catch-title{
     font-family: "EB Garamond", serif;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
+    letter-spacing: -0.018em;
 }
 
 .introduction-catch-top{
+    padding-top: 0.8rem;
+    letter-spacing: -0.04em;
     font-size: 2.4rem;
     font-weight: bold;
     color: #fff;
 }
 
 .introduction-catch-bottom{
+    margin-top: 1.8rem;
+    letter-spacing: 0.03em;
     font-size: 1.4rem;
     color: #fff;
+    line-height: 3.1rem;
 }
+
+
+
+
+
+
+
+
+/* Voice
+------------------------------------------ */
+
+.voice-container{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+/* スライダー全体のレイアウト */
+.voice_introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* スライドを並べるラッパー */
+.voice-slick-item {
+    display: flex;
+    flex-direction: row; /* 横並びに */
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.voice-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* 各スライド */
+.voice-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .voice-slide {
+    flex: 0 0 33.3333%;
+    width: 33.3333%;
+  }
+}
+
+/* スライド内コンテンツ（カード） */
+.voice_top {
+    max-width: 28rem;
+    background-color: #e6f8fa;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.voice_top img {
+    border-radius: 10rem;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+/* 名前とテキスト */
+.voice-name {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.voice-text {
+    width: 25rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* 左右矢印ボタン */
+.voice-left,
+.voice-right {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.voice-left img,
+.voice-right img {
+    width: 100%;
+    height: auto;
+}
+
+/* インジケーター（ドット） */
+.voice-indicators {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transform: none;         /* ← translateY のリセット */
+  top: auto;
+  right: auto;
+  flex-direction: row;     /* ← 横並びにする */
+}
+
+.voice-indicator-dot {
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+}
+
+.voice-indicator-dot.active {
+  background-color: #00bcd4;
+}
+
+
+
+
+/* QA
+------------------------------------------ */
+.qa{
+    background: linear-gradient(to right, #F4FFE8, #C6F0FE);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-top: 3.2rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.4rem;
+}
+
+.qa-section-title{
+    font-size: 3rem;
+    font-family: "EB Garamond", serif;
+    margin-bottom: 3.5rem;
+}
+
+.qa-section-sub{
+    font-size: 1.6rem;
+}
+
+
+/* 全体コンテナ */
+.accordion-QA {
+     margin-bottom: 1.9rem;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Q部分 */
+.accordion-title-Q {
+        padding: 1.4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    cursor: pointer;
+}
+
+/* Qマークとテキスト */
+.accordion-title {
+  display: flex;
+  gap: 1rem;
+}
+
+.Q-circle {
+  font-weight: 500;
+  font-family: "EB Garamond", serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+    color: #444444;
+}
+
+.Q-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  flex: 1;
+  color: #444444;
+  letter-spacing: -0.03em;
+    line-height: 1.7em;
+}
+
+
+/* A部分（コンテンツ） */
+.accordion-content {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    background: #fff;
+    margin-bottom: 2.7rem;
+        max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.active {
+  display: flex;
+}
+
+/* Aマークと本文 */
+.A-circle {
+    font-weight: 500;
+    font-family: "EB Garamond", serif;
+      color: #000000;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  flex-shrink: 0; 
+  margin-top: 0.2rem;
+}
+
+.A-text {
+    padding-left: 0.3rem;
+    font-size: 1.5rem;
+    color: #000000;
+    line-height: 1.8;
+    letter-spacing: -0.035em;
+    flex: 1;
+}
+
+/* トグル矢印 */
+.accordion-menu-btn{
+    padding-top: 0.65rem;
+    padding-right: 0.2rem;
+}
+
+.accordion-menu-btn img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.accordion-menu-btn img {
+  transition: transform 0.3s ease;
+}
+
+.accordion-QA.open .accordion-menu-btn img {
+  transform: rotate(180deg);
+}
+
+
 
 /* フッター
 ------------------------------------------ */
 .footer{
-background-color: #DDDDDD;
+    background-color: #0071CE;
     height: 100%;
 }
 
-.footer .container{
-    line-height: 8.3rem;
-    display: flex;
-    justify-content: center;
+.footer-container{
+    padding-top: 2.3rem;
 }
+
+.footer-top{
+    letter-spacing: 0.5rem;
+    text-align:  center;
+    font-size: 2.8rem;
+    color: #FFFFFF;
+    font-family: "Marcellus", serif;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-nav-list-group {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
 /* コピーライト */
 .footer-copyright {
-    color: #333333;
-    font-size: 1.2rem;
+padding-top: 01rem;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    text-align: center;
+    display: block;
+    letter-spacing: -0.02rem;
 }
-
-@media (min-width: 768px) {
-.footer-copyright{
-        padding-top: 1.3rem;
-        font-size: 1.3rem;
-}
-}
-
 
 .top-arrow-wrapper {
     display: flex;
     justify-content: flex-end;
-    padding-right: 27px;
+    padding-right: 1.6rem;
     position: sticky;
-    bottom: 10px;
+    bottom: 1rem;
     left: 0;
+}
+
+.footer-netShopusi-img{
+    width: 4rem;
 }
