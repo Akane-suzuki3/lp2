@@ -71,7 +71,7 @@ h2{
     width: 29rem;
     height: 5.8rem;
       background-color: #46C4DB;
-  border: 2px solid #46C4DB;
+  border: 0.3rem solid #46C4DB;
     font-size: 1.8rem;
 }
 
@@ -106,7 +106,7 @@ h2{
     height: 5.8rem;
     font-size: 1.8rem;
       background-color: #5DD5AB;
-  border: 2px solid #5DD5AB;
+  border: 0.3rem solid #5DD5AB;
 }
 
 @media (min-width: 767.9px) {
@@ -185,7 +185,6 @@ h2{
 
 @media (min-width: 768px) {
     .cover.background_image {
-        display: flex;
         width: 100%;
         height: 72rem;
         background-image: url(../images/cover/mainvisual_pc.jpg);
@@ -201,10 +200,11 @@ h2{
 
 @media (min-width: 768px) {
   .cover-container {
-    margin-left: 13vw;
     margin-right: auto;
     max-width: none;
 margin-top: 26rem;
+max-width: 110rem;
+margin-inline: auto;
   }
 }
 
@@ -246,7 +246,7 @@ margin-top: 26rem;
     padding-right: 1.6rem;
     padding-left: 1.6rem;
     padding-top: 3.8rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -262,7 +262,6 @@ margin-top: 26rem;
     flex-direction: column;
     background-color: #F0F4FF;
     padding-top: 1.8rem;
-    
 }
 
 @media (min-width: 768px) {
@@ -327,14 +326,13 @@ padding-top: 0.4rem;
     background-image: url(/assets/images/introduction/introduction_sp.jpg);
     background-size: cover;
     height: 66.5rem;
-    margin-top: 4.1rem;
     background-position:center;
 }
 
 @media (min-width: 768px) {
     .introduction{
         display: flex;
-        margin-top: 3.1rem;
+        margin-top: 0rem;
         width: 100%;
         height: 55rem;
         background-image: url(/assets/images/introduction/introduction_pc.jpg);
@@ -418,6 +416,7 @@ padding-top: 0.4rem;
         padding-right: 3rem;
         letter-spacing: -0.0rem;
         padding-top: 0.5rem;
+        padding-left: 0rem;
 }
 }
 
@@ -809,6 +808,7 @@ padding-top: 0.4rem;
     padding-bottom: 2rem;
 }
 
+
 @media screen and (min-width: 768px) {
 .footer-container{
     max-width: 127.2rem;
@@ -834,30 +834,24 @@ padding-top: 0.4rem;
 
 
 .footer-bottom{
-    display: flex;
-    justify-content: space-around;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
-    flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
 .footer-bottom{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
 }
+
 }
+
 
 .footer-nav-list-group {
     display: flex;
-    margin-top: 0.6rem;
     gap: 2.5rem;
             font-size: 1.2rem;
     justify-content: center;
-    padding: 0;
     list-style: none;
 }
 
@@ -886,6 +880,8 @@ padding-top: 0.4rem;
   text-decoration: underline;
 }
 
+
+
 /* コピーライト */
 .footer-copyright {
 padding-top: 1rem;
@@ -896,15 +892,25 @@ padding-top: 1rem;
     letter-spacing: -0.02rem;
 }
 
+.top-arrow-area {
+  position: relative;
+}
 
 .top-arrow-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 1rem;
-    position: sticky;
-    bottom: 1rem;
-    left: 0;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: none;
+  transition: opacity 0.3s ease;
 }
+
+
+.top-arrow-wrapper.stopped {
+  position: absolute;
+  bottom: 100%; /* ← 親の bottom で止まる */
+}
+
 
 @media screen and (min-width: 768px) {
 .top-arrow-wrapper {

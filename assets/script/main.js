@@ -112,3 +112,32 @@ $(document).ready(function () {
         $(this).attr('src', '/assets/images/Backtotop.svg');
     });
 });
+
+
+$(window).on('scroll resize', function () {
+    const $arrow = $('.top-arrow-wrapper');
+    const $footer = $('footer');
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const footerTop = $footer.offset().top;
+
+    const arrowHeight = $arrow.outerHeight(true);
+    const scrollBottom = scrollTop + windowHeight;
+
+    const isOverFooter = scrollBottom >= footerTop;
+
+    // 表示制御（常に「visible」にしてから、表示／非表示）
+    if (scrollTop > 100 || isOverFooter) {
+        $arrow.stop(true, true).fadeIn(300);
+    } else {
+        $arrow.stop(true, true).fadeOut(300);
+    }
+
+    // スクロール位置でクラス切り替え
+    if (isOverFooter) {
+        $arrow.addClass('stopped');
+    } else {
+        $arrow.removeClass('stopped');
+    }
+});
+
