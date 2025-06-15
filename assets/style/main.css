@@ -70,19 +70,23 @@ h2{
     border-radius: 5rem;
     width: 29rem;
     height: 5.8rem;
+      background-color: #46C4DB;
+  border: 2px solid #46C4DB;
     font-size: 1.8rem;
 }
 
 @media (min-width: 767.9px) {
 .button-blue-ghost {
-        width: 34rem;
-        height: 7.5rem;
-            font-size: 2.4rem;
+        width: 30rem;
+        height: 5.8rem;
+        font-size: 1.8rem;
 }
 }
 
 .button-blue-ghost:hover {
-        opacity: 0.6;
+  background-color: #ffffff;
+  color: #46C4DB;
+  opacity: 1;;
 }
 
 .button-blue {
@@ -101,18 +105,23 @@ h2{
     width: 29rem;
     height: 5.8rem;
     font-size: 1.8rem;
+      background-color: #5DD5AB;
+  border: 2px solid #5DD5AB;
 }
 
 @media (min-width: 767.9px) {
 .button-green-ghost {
-        width: 34rem;
-        height: 7.5rem;
-        font-size: 2.4rem;
+        width: 30rem;
+        height: 5.8rem;
+        font-size: 1.8rem;
+                margin-top: revert-layer
     }
 }
 
 .button-green-ghost:hover {
-        opacity: 0.6;
+  background-color: #ffffff;
+  color: #5DD5AB;
+  opacity: 1;
 }
 
 .button-green {
@@ -122,7 +131,7 @@ h2{
 /* ヘッダー
 ------------------------------------------ */
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -130,6 +139,7 @@ h2{
     background-color: transparent; 
     width: 100%;
 }
+
 
 .header-container {
     padding-top: 2.3rem;
@@ -143,18 +153,31 @@ h2{
 }
 
 
+@media (min-width: 767.9px) {
+.header-container {
+        padding-top: 3rem;
+        font-size: 2.8rem;
+        letter-spacing: 0.6rem;;
+}
+}
+
 /* カバー
 ------------------------------------------ */
 .cover{
     height: 55.7rem;
 }
 
+@media (min-width: 768px) {
+.cover{
+    height: 72rem;
+}
+}
 
 
 .cover.background_image{
     background-image: url(/assets/images/cover/mainvisual_sp.jpg);
     background-size: cover;
-    height: 43.3rem;
+    height: 44rem;
     background-position:center;
     padding-top: 1rem;
     position: relative;
@@ -164,7 +187,7 @@ h2{
     .cover.background_image {
         display: flex;
         width: 100%;
-        height: 65rem;
+        height: 72rem;
         background-image: url(../images/cover/mainvisual_pc.jpg);
         background-size: cover;
             background-position:center;
@@ -172,8 +195,17 @@ h2{
 }
 
 .cover-container{
-    margin-top: 39rem;
+    margin-top: 39.7rem;
     margin-left: 2.3rem;
+}
+
+@media (min-width: 768px) {
+  .cover-container {
+    margin-left: 13vw;
+    margin-right: auto;
+    max-width: none;
+margin-top: 26rem;
+  }
 }
 
 .cover-catch {
@@ -184,12 +216,14 @@ h2{
     font-family: "Marcellus", serif;
     font-size:4.1rem;
     font-weight: 400 ;
-    letter-spacing: 0.265em;
+    letter-spacing: 0.28em;
 }
 
 @media (min-width: 768px) {
 .cover-catch-top {
     font-size: 5rem;
+    padding-left: 3rem;
+    line-height: 7rem;
 }
 }
 
@@ -197,7 +231,7 @@ h2{
     padding-top: 0.5rem;
     font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 0.245em;
+    letter-spacing: 0.27em;
 }
 
 @media (min-width: 768px) {
@@ -211,8 +245,14 @@ h2{
 .contact {
     padding-right: 1.6rem;
     padding-left: 1.6rem;
-    padding-top: 2.8rem;
-    padding-bottom: 1rem;
+    padding-top: 3.8rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+.contact {
+    padding-top: 4.8rem;
+}
 }
 
 .contact-container {
@@ -225,6 +265,18 @@ h2{
     
 }
 
+@media (min-width: 768px) {
+.contact-container{
+        display: flex;
+        max-width: 100rem;
+        margin-inline: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 14.6rem;
+        padding-top: revert-layer;
+}
+}
+
 .contact-text{
     display: flex;
     flex-direction: column;
@@ -235,16 +287,38 @@ h2{
     font-weight: 600;
     letter-spacing: 0.06em;
 }
+
+@media (min-width: 768px) {
+.contact-text{
+        font-size: 2.4rem;
+        text-align: left;
+        padding-left: 1.8rem;
+}
+}
+
 .contact_fee{
 padding-top: 0.4rem;
     font-size: 1.4rem;
-    letter-spacing: 0.08em;
     font-weight: 400;
 }
 
+@media (min-width: 768px) {
+.contact_fee{
+    font-size: 1.6rem;
+}
+}
+
 .free-button{
-    margin-top: 1.7rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
+    gap: 3.2rem;
+}
+
+@media (min-width: 768px) {
+.free-button{
+        display: flex;
+        align-items: center;
+}
 }
 
 /* 紹介
@@ -252,20 +326,20 @@ padding-top: 0.4rem;
 .introduction{
     background-image: url(/assets/images/introduction/introduction_sp.jpg);
     background-size: cover;
-    height: 65.5rem;
-    margin-top: 5rem;
+    height: 66.5rem;
+    margin-top: 4.1rem;
     background-position:center;
 }
 
 @media (min-width: 768px) {
     .introduction{
         display: flex;
-        margin-top: 10.1rem;
+        margin-top: 3.1rem;
         width: 100%;
-        height: 65rem;
+        height: 55rem;
         background-image: url(/assets/images/introduction/introduction_pc.jpg);
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
 }
 
@@ -277,9 +351,26 @@ padding-top: 0.4rem;
     padding-top: 4.5rem;
 }
 
+@media (min-width: 768px) {
+.introduction-container{
+    max-width: 120rem;
+    margin-inline: auto;
+    margin-left: 55vw;
+    padding-top: 13rem;
+}
+}
+
 .introduction-catch{
     width: 35.8rem;
     text-align: center;
+}
+
+
+@media (min-width: 768px) {
+.introduction-catch{
+    width: 46.7rem;
+    text-align: left;
+}
 }
 
 .introduction-catch-title{
@@ -290,6 +381,13 @@ padding-top: 0.4rem;
     letter-spacing: -0.018em;
 }
 
+@media (min-width: 768px) {
+.introduction-catch-title{
+    font-size: 3.8rem;
+    letter-spacing: 0.02rem;
+}
+}
+
 .introduction-catch-top{
     padding-top: 0.8rem;
     letter-spacing: -0.04em;
@@ -298,27 +396,73 @@ padding-top: 0.4rem;
     color: #fff;
 }
 
-.introduction-catch-bottom{
-    margin-top: 1.8rem;
-    letter-spacing: 0.03em;
-    font-size: 1.4rem;
-    color: #fff;
-    line-height: 3.1rem;
+@media (min-width: 768px) {
+.introduction-catch-top{
+    letter-spacing: 0.1rem;
+}
 }
 
+.introduction-catch-bottom{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.3rem;
+    letter-spacing: -0.03em;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 3.16rem;
+    text-align: left;
+}
 
-
-
-
-
+@media (min-width: 768px) {
+    .introduction-catch-bottom{
+        padding-right: 3rem;
+        letter-spacing: -0.0rem;
+        padding-top: 0.5rem;
+}
+}
 
 
 /* Voice
 ------------------------------------------ */
+.voice{
+    margin-top: 4.8rem;
+}
 
+@media (min-width: 768px) {
+.voice{
+    margin-top: 8rem;
+    max-width: 115.6rem;
+        margin-inline: auto;
+}
+}
 .voice-container{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+}
+
+.voice-section-title{
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    font-family: "EB Garamond", serif;
+}
+
+@media (min-width: 768px) {
+.voice-section-title{
+    font-size: 4.5rem;
+}
+}
+
+.voice-section-sub{
+    font-size: 1.6rem;
+    font-family: "Noto Serif JP", serif;
+    padding-top: 0.3rem;
+}
+
+@media (min-width: 768px) {
+.voice-section-sub{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
 }
 
 /* スライダー全体のレイアウト */
@@ -327,7 +471,7 @@ padding-top: 0.4rem;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 }
 
 /* スライドを並べるラッパー */
@@ -376,6 +520,13 @@ padding-top: 0.4rem;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+.voice_top {
+    padding-top: 4.8rem;
+}
+}
+
+
 .voice_top img {
     border-radius: 10rem;
     width: 8rem;
@@ -383,19 +534,35 @@ padding-top: 0.4rem;
     object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+.voice_top img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
 /* 名前とテキスト */
 .voice-name {
     font-size: 1.4rem;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     font-weight: bold;
 }
 
 .voice-text {
+    padding-left: 0.7rem;
+    letter-spacing: -0.04rem;
     width: 25rem;
     font-size: 1.4rem;
-    line-height: 1.6;
-    margin-top: 2rem;
+    line-height: 2.7rem;
+    margin-top: 1.5rem;
     text-align: left;
+}
+
+@media (min-width: 768px) {
+.voice-text {
+    letter-spacing: 0.1rem;
+    padding-bottom: 1rem;
+}
 }
 
 /* 左右矢印ボタン */
@@ -405,6 +572,15 @@ padding-top: 0.4rem;
     width: 4rem;
     height: 4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .voice-left,
+.voice-right {
+        width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
 
 .voice-left img,
 .voice-right img {
@@ -418,13 +594,13 @@ padding-top: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-top: 2.4rem;
   margin-bottom: 1rem;
-  transform: none;         /* ← translateY のリセット */
+  transform: none;         
   top: auto;
   right: auto;
-  flex-direction: row;     /* ← 横並びにする */
+  flex-direction: row;  
 }
 
 .voice-indicator-dot {
@@ -456,16 +632,36 @@ padding-top: 0.4rem;
     padding-bottom: 1.4rem;
 }
 
+@media screen and (min-width: 768px) {
+.qa{
+    margin-top: 10rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0rem;
+}
+}
+
 .qa-section-title{
     font-size: 3rem;
     font-family: "EB Garamond", serif;
     margin-bottom: 3.5rem;
 }
 
+@media screen and (min-width: 768px) {
+.qa-section-title{
+    font-size: 4.5rem;
+}
+}
+
 .qa-section-sub{
     font-size: 1.6rem;
 }
 
+@media screen and (min-width: 768px) {
+.qa-section-sub{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
+}
 
 /* 全体コンテナ */
 .accordion-QA {
@@ -474,9 +670,16 @@ padding-top: 0.4rem;
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+.accordion-QA {
+    width: 60rem;
+    margin-inline: auto;
+}
+}
+
 /* Q部分 */
 .accordion-title-Q {
-        padding: 1.4rem;
+    padding: 1.4rem;
     margin-top: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -484,11 +687,19 @@ padding-top: 0.4rem;
     cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+.accordion-title-Q {
+    margin-top: 1.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+}
+}
 /* Qマークとテキスト */
 .accordion-title {
   display: flex;
   gap: 1rem;
 }
+
 
 .Q-circle {
   font-weight: 500;
@@ -496,6 +707,11 @@ padding-top: 0.4rem;
   font-size: 1.6rem;
   line-height: 2rem;
     color: #444444;
+}
+@media screen and (min-width: 768px) {
+.Q-circle {
+    font-size: 1.8rem;
+}
 }
 
 .Q-text {
@@ -507,20 +723,27 @@ padding-top: 0.4rem;
     line-height: 1.7em;
 }
 
-
+@media screen and (min-width: 768px) {
+.Q-text {
+    letter-spacing: 0.02em;
+}
+}
 /* A部分（コンテンツ） */
 .accordion-content {
-    display: none;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    background: #fff;
-    margin-bottom: 2.7rem;
-        max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+  display: none; 
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background: #fff;
+  margin-bottom: 2.7rem;
+}
+
+@media screen and (min-width: 768px) {
+.accordion-content {
+  margin-bottom: 2.7rem;
+}
 }
 
 .accordion-content.active {
@@ -553,6 +776,12 @@ padding-top: 0.4rem;
     padding-right: 0.2rem;
 }
 
+@media screen and (min-width: 768px) {
+.accordion-menu-btn{
+    padding-right: 1rem;
+}
+}
+
 .accordion-menu-btn img {
   width: 1.4rem;
   height: 1.4rem;
@@ -577,6 +806,16 @@ padding-top: 0.4rem;
 
 .footer-container{
     padding-top: 2.3rem;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+.footer-container{
+    max-width: 127.2rem;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-around;
+}
 }
 
 .footer-top{
@@ -587,6 +826,13 @@ padding-top: 0.4rem;
     font-family: "Marcellus", serif;
 }
 
+@media screen and (min-width: 768px) {
+.footer-top{
+    font-size: 3.2rem;
+}
+}
+
+
 .footer-bottom{
     display: flex;
     justify-content: space-around;
@@ -595,18 +841,45 @@ padding-top: 0.4rem;
     flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+}
+
 .footer-nav-list-group {
-  display: flex;
-  gap: 2.5rem;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
+    display: flex;
+    margin-top: 0.6rem;
+    gap: 2.5rem;
+            font-size: 1.2rem;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+.footer-nav-list-group{
+    align-items: center;
+            font-size: 1.4rem;
+    padding-left: 10rem;
+}
 }
 
 .footer-bottom a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+.footer-bottom a {
+    font-size: 1.4rem;
+}
 }
 
 .footer-bottom a:hover {
@@ -615,7 +888,7 @@ padding-top: 0.4rem;
 
 /* コピーライト */
 .footer-copyright {
-padding-top: 01rem;
+padding-top: 1rem;
     color: #FFFFFF;
     font-size: 1.1rem;
     text-align: center;
@@ -623,15 +896,24 @@ padding-top: 01rem;
     letter-spacing: -0.02rem;
 }
 
+
 .top-arrow-wrapper {
     display: flex;
     justify-content: flex-end;
-    padding-right: 1.6rem;
+    padding-right: 1rem;
     position: sticky;
     bottom: 1rem;
     left: 0;
 }
 
+@media screen and (min-width: 768px) {
+.top-arrow-wrapper {
+    padding-right: 10vw;
+
+}
+}
+
 .footer-netShopusi-img{
     width: 4rem;
 }
+
