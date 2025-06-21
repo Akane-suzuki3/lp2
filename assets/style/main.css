@@ -114,7 +114,6 @@ h2{
         width: 30rem;
         height: 5.8rem;
         font-size: 1.8rem;
-                margin-top: revert-layer
     }
 }
 
@@ -272,7 +271,6 @@ margin-inline: auto;
         flex-direction: row;
         justify-content: space-around;
         height: 14.6rem;
-        padding-top: revert-layer;
 }
 }
 
@@ -559,6 +557,7 @@ padding-top: 0.4rem;
 
 @media (min-width: 768px) {
 .voice-text {
+    font-size: 1.6rem;
     letter-spacing: 0.1rem;
     padding-bottom: 1rem;
 }
@@ -633,9 +632,10 @@ padding-top: 0.4rem;
 
 @media screen and (min-width: 768px) {
 .qa{
-    margin-top: 10rem;
+    margin-top: 5rem;
     padding-bottom: 2.5rem;
     margin-bottom: 0rem;
+    padding-top: 4rem;
 }
 }
 
@@ -657,7 +657,7 @@ padding-top: 0.4rem;
 
 @media screen and (min-width: 768px) {
 .qa-section-sub{
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     font-size: 2rem;
 }
 }
@@ -803,6 +803,14 @@ padding-top: 0.4rem;
     height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+.footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+}
+
+
 .footer-container{
     padding-top: 2.3rem;
     padding-bottom: 2rem;
@@ -877,7 +885,7 @@ padding-top: 0.4rem;
 }
 
 .footer-bottom a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
